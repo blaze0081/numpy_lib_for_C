@@ -11,4 +11,10 @@ int* np_full(int size[], int number);
 int* np_full_1D(int x, int number);
 int** np_full_2D(int x, int y, int number);
 
-int dim_arr(int arr[]);
+int check_dim(int arr[]);
+int np_add(int a[], int b[], int n);
+int np_sub(int a[], int b[], int n);
+int np_multi(int a[], int b[], int n);
+int np_div(int a[], int b[], int n);
+int np_dot(int a[], int b[], int n);
+int np_sort(int a[], int n);

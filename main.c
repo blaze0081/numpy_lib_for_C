@@ -5,14 +5,21 @@
 int main() 
 {
     //int size = 10;
-    int* zeroArray = np_full_1D(10, 8);
-    
-    // zeroArray[4]=5;
-    // printf("%d\n", zeroArray[4]);
+    int arr_size[] = {10,8};
 
-        for (int i = 0; i < 10; i++) {
-            printf("%d \n", zeroArray[i]);  // Print each element of the array
+    int* zeroArray = np_zeros(arr_size);
+
+    // zeroArray[4][5]=5;
+    // printf("%d\n", zeroArray[4][5]);
+
+        for (int i = 0; i < arr_size[0]; i++) {
+            for (int j = 0; j < arr_size[1]; j++) {
+                printf("%d ", zeroArray[i]);  // Print each element of the 2D array
+            }
+            printf("\n");
         }
+
+
 
     return 0;
 }
